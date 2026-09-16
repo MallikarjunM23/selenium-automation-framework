@@ -1,0 +1,8 @@
+pageClasses\ConfirmationPage.class
+utils\ExcelReader.class
+utils\AbstractComponents.class
+pageClasses\LandingPage.class
+pageClasses\CartPage.class
+pageClasses\OrdersPage.class
+pageClasses\ProductCatolouge.class
+pageClasses\CheckOutPage.class
