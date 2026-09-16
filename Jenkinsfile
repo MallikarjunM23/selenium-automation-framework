@@ -24,17 +24,27 @@ pipeline {
     }
 
     post {
-        always {
-            archiveArtifacts artifacts: 'reports/**',
-                            allowEmptyArchive: true
-        }
+    always {
 
-        success {
-            echo 'Selenium automation execution completed successfully.'
-        }
+        archiveArtifacts artifacts: 'reports/**',
+                         allowEmptyArchive: true
 
-        failure {
-            echo 'Selenium automation execution failed. Check the console output.'
-        }
+        publishHTML([
+            allowMissing: true,
+            alwaysLinkToLastBuild: true,
+            keepAll: true,
+            reportDir: 'reports',
+            reportFiles: 'index.html',
+            reportName: 'Extent Report'
+        ])
     }
+
+    success {
+        echo 'Selenium automation execution completed successfully.'
+    }
+
+    failure {
+        echo 'Selenium automation execution failed. Check the console output.'
+    }
+}
 }
