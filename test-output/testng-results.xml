@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-09-16T16:39:43 IST" name="Suite" finished-at="2026-09-16T16:40:06 IST" duration-ms="22991">
+    <groups>
+    </groups>
+    <test started-at="2026-09-16T16:39:43 IST" name="ErrorTests" finished-at="2026-09-16T16:40:03 IST" duration-ms="19814">
+      <class name="EndToEndTests.ErrorValidation">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:EndToEndTests.ErrorValidation@544fa968]" started-at="2026-09-16T16:39:44 IST" name="launchApplication" finished-at="2026-09-16T16:39:51 IST" duration-ms="6264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="ErrorValidationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:EndToEndTests.ErrorValidation@544fa968]" started-at="2026-09-16T16:39:51 IST" name="ErrorValidationTest" data-provider="loginData" finished-at="2026-09-16T16:39:54 IST" duration-ms="3614" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[moon@test.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Moon@123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[ZARA COAT 3]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Prroduct Added To Cart] but found [Product Added To Cart]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Prroduct Added To Cart] but found [Product Added To Cart]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at EndToEndTests.ErrorValidation.ErrorValidationTest(ErrorValidation.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ErrorValidationTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:EndToEndTests.ErrorValidation@544fa968]" started-at="2026-09-16T16:39:55 IST" name="teardown" finished-at="2026-09-16T16:39:55 IST" duration-ms="452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:EndToEndTests.ErrorValidation@544fa968]" started-at="2026-09-16T16:39:55 IST" name="launchApplication" finished-at="2026-09-16T16:39:57 IST" duration-ms="1928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="ErrorValidationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:EndToEndTests.ErrorValidation@544fa968]" started-at="2026-09-16T16:39:57 IST" name="ErrorValidationTest" data-provider="loginData" finished-at="2026-09-16T16:40:02 IST" duration-ms="4668" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[moon@test.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Moon@123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[ADIDAS ORIGINAL]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Prroduct Added To Cart] but found [Product Added To Cart]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Prroduct Added To Cart] but found [Product Added To Cart]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at EndToEndTests.ErrorValidation.ErrorValidationTest(ErrorValidation.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ErrorValidationTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:EndToEndTests.ErrorValidation@544fa968]" started-at="2026-09-16T16:40:02 IST" name="teardown" finished-at="2026-09-16T16:40:03 IST" duration-ms="483" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- EndToEndTests.ErrorValidation -->
+    </test> <!-- ErrorTests -->
+    <test started-at="2026-09-16T16:39:43 IST" name="ProductTests" finished-at="2026-09-16T16:40:06 IST" duration-ms="22991">
+      <class name="EndToEndTests.ProductOrder">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:EndToEndTests.ProductOrder@5fe94a96]" started-at="2026-09-16T16:39:44 IST" name="launchApplication" finished-at="2026-09-16T16:39:49 IST" duration-ms="4966" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="orderProductTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:EndToEndTests.ProductOrder@5fe94a96]" started-at="2026-09-16T16:39:49 IST" name="orderProductTest" data-provider="loginData" finished-at="2026-09-16T16:39:56 IST" duration-ms="6222" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[moon@test.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Moon@123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[ZARA COAT 3]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderProductTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:EndToEndTests.ProductOrder@5fe94a96]" started-at="2026-09-16T16:39:56 IST" name="teardown" finished-at="2026-09-16T16:39:56 IST" duration-ms="524" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:EndToEndTests.ProductOrder@5fe94a96]" started-at="2026-09-16T16:39:56 IST" name="launchApplication" finished-at="2026-09-16T16:40:01 IST" duration-ms="4441" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="orderProductTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:EndToEndTests.ProductOrder@5fe94a96]" started-at="2026-09-16T16:40:01 IST" name="orderProductTest" data-provider="loginData" finished-at="2026-09-16T16:40:05 IST" duration-ms="4746" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[moon@test.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Moon@123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[ADIDAS ORIGINAL]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderProductTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:EndToEndTests.ProductOrder@5fe94a96]" started-at="2026-09-16T16:40:05 IST" name="teardown" finished-at="2026-09-16T16:40:06 IST" duration-ms="507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- EndToEndTests.ProductOrder -->
+    </test> <!-- ProductTests -->
+  </suite> <!-- Suite -->
+</testng-results>
